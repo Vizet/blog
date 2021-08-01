@@ -8,8 +8,9 @@ const appendSuffix = n => {
 module.exports = function dateFilter(value) {
   const dateObject = new Date(value);
 
-  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  const dayWithSuffix = appendSuffix(dateObject.getDate());
+  const months = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+  const day = dateObject.getDate();
+  const dayWithPrefix = day > 9 ? day : `0${day}`;
 
-  return `${dayWithSuffix} ${months[dateObject.getMonth()]} ${dateObject.getFullYear()}`;
+  return `${dayWithPrefix}.${months[dateObject.getMonth()]}.${dateObject.getFullYear()}`;
 };

@@ -4,6 +4,12 @@ permalink: '/contact/index.html'
 layout: 'layouts/contact.njk'
 ---
 
-You can have a contact page which uses a basic form. The [code with the form fields lives here](https://github.com/hankchizljaw/hylia/blob/master/src/_includes/layouts/contact.njk). 
+### Омельницкий Рома
 
-To delete the contact form for this site, delete this page in the CMS or at `src/pages/contact.md`. You probably will also want to delete `src/pages/thank-you.md`.
+Telegramm: [@jvizet](https://t.me/jvizet)
+
+Twitter: [@vani11a_wave](https://twitter.com/vani11a_wave)
+
+Рабочая почта:  <vanilla-wave@yandex-team.ru>
+
+Личная почта: <vizetmail@gmil.com>

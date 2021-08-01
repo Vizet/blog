@@ -1,17 +1,17 @@
 {
   "items": [
     {
-      "text": "Home",
+      "text": "Главная",
       "url": "/",
       "external": false
     },
     {
-      "text": "GitHub",
-      "url": "https://github.com/hankchizljaw/hylia",
+      "text": "Twitter",
+      "url": "https://twitter.com/vani11a_wave",
       "external": true
     },
     {
-      "text": "Example Contact Page",
+      "text": "Контакты",
       "url": "/contact",
       "external": false
     }

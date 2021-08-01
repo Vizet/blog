@@ -4,10 +4,11 @@
 {% set introHeading = title %}
 {% set introSummary %}
 <p class="[ intro__meta ] [ text-500 leading-tight ]">
+  <h1 class="[ post-title ]">{{ title }}</h1>
+  <div>~ {{ helpers.getReadingTime(content) }} мин.</div>
   {% if date %}
     <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
   {% endif %}
-  <span>— {{ helpers.getReadingTime(content) }} minute read</span>
 </p>
 {% endset %}
 
