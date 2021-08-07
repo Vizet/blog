@@ -8,7 +8,7 @@ yarn dev
 ```
 ### Прод сборка
 ```bash
-yarn prod
+yarn production
 ```
 
 ## TODO list

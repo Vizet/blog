@@ -25,10 +25,11 @@
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "dev": "npm-run-all --parallel css eleventy",
-    "css": "sass src/scss/global.scss src/_includes/assets/css/global.css --watch",
+    "dev": "npm-run-all --parallel css-watch eleventy",
+    "css": "sass src/scss/global.scss src/_includes/assets/css/global.css",
+    "css-watch": "sass src/scss/global.scss src/_includes/assets/css/global.css --watch",
     "eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
-    "prod": "yarn run css && npx eleventy"
+    "production": "yarn run css && npx eleventy"
   },
   "repository": {
     "type": "git",
