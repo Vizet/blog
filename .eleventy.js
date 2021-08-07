@@ -37,7 +37,10 @@ module.exports = function(config) {
   const now = new Date();
 
   // Custom collections
-  const livePosts = post => post.date <= now && !post.data.draft;
+  const livePosts = post => {
+    console.log('post.data',  post.data.title, post.date, now)
+    return post.date <= now && !post.data.draft;
+  }
   config.addCollection('posts', collection => {
     return [
       ...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
