@@ -14,3 +14,4 @@ module.exports = function dateFilter(value) {
 
   return `${dayWithPrefix}.${months[dateObject.getMonth()]}.${dateObject.getFullYear()}`;
 };
+

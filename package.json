@@ -1,14 +1,13 @@
 {
-  "name": "hylia",
+  "name": "dev-blog",
   "version": "0.7.0",
-  "description": "A simple Eleventy starter kit to help you have a blog of your own",
+  "description": "Vanilla-wave blog",
   "main": "index.js",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
     "@tbranyen/jsdom": "^13.0.0",
-    "concurrently": "^4.1.2",
     "html-minifier": "^4.0.0",
     "image-size": "^0.8.3",
     "json-to-scss": "^1.5.0",
@@ -20,27 +19,22 @@
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "bl": "^3.0.0",
-    "chokidar-cli": "^2.1.0",
     "cross-env": "^5.2.1",
     "make-dir-cli": "^2.0.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/_tokens.scss",
-    "sass:process": "yarn run sass:tokens && sass src/scss/global.scss src/_includes/assets/css/global.css --style=compressed",
-    "dev": "concurrently \"yarn run sass:process -- --watch\"  \"yarn run serve\"",
-    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
-    "production": "yarn run sass:process && yarn run cms:precompile && yarn run cms:bundle && npx eleventy"
+    "dev": "npm-run-all --parallel css eleventy",
+    "css": "sass src/scss/global.scss src/_includes/assets/css/global.css --watch",
+    "eleventy": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "prod": "yarn run css && npx eleventy"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hankchizljaw/hylia.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hankchizljaw/hylia/issues"
-  },
-  "homepage": "https://github.com/hankchizljaw/hylia#readme"
+  "author": "vanilla-wave",
+  "license": "MIT"
 }
