@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Vanilla Wave's blog123
+title: Vanilla Wave's blog
 archiveButtonText: Все посты
 metaDesc: Vanilla Wave's blog
 socialImage: ''
