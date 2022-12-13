@@ -4,11 +4,12 @@
 
 ### Разработка с hot reload
 ```bash
-yarn dev
+pnpm install
+pnpm dev
 ```
 ### Прод сборка
 ```bash
-yarn production
+pnpm production
 ```
 
 ## TODO list
