@@ -1,6 +1,6 @@
 # Vanilla wave blog
 
-Сделан на основе [Eleventy стартера](https://www.netlifycms.org/)
+Сделан на основе Astro
 
 ### Разработка с hot reload
 ```bash
