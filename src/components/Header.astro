@@ -5,9 +5,6 @@ import LinkButton from "./LinkButton.astro";
 import { SOCIALS } from "@config";
 import socialIcons from "@assets/socialIcons";
 
-import logoPNG from "/assets/logo.png";
-import logoSVG from "/assets/logo.svg";
-
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
 }
@@ -115,7 +112,7 @@ const { activeNav } = Astro.props;
     @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
   }
   .nav-container {
-    @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
+    @apply mx-auto flex max-w-2xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
     @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
