@@ -1,19 +1,21 @@
 # Vanilla wave blog
 
-Сделан на основе [Eleventy стартера](https://www.netlifycms.org/)
+Мой блог со статьями. Сделан на Astro
 
-### Разработка с hot reload
+### Разработка
+
 ```bash
 pnpm install
 pnpm dev
 ```
+
 ### Прод сборка
+
 ```bash
-pnpm production
+pnpm build
 ```
 
 ## TODO list
-- отпилить stalfos
-- заменить sass на post css
-- сделать импорт из notion
+
+- попробовать bun
 - постараться регулярно писать статьи
